@@ -31,7 +31,7 @@
                     <div id="carrito" class="header__carrito">
                         <table id="lista-carrito">
                             <thead>
-                                <tr class="row header__espaciado">
+                                <tr>
                                     <th>Imagen</th>
                                     <th>Nombre</th>
                                     <th>Precio</th>
@@ -60,10 +60,11 @@
 
     <main class="main contenedor">
         <h2 class="main__titulo">Productos de Belleza más Recientes</h2>
-        <p class="main__parrafo">Los productos de Belleza para mujeres más recientes. Sigue los pasos de aquellos que más te gusten y en muy
+        <p class="main__parrafo">Los productos de Belleza para mujeres más recientes. Sigue los pasos de aquellos que
+            más te gusten y en muy
             poco tiempo te verás y sentirás mucho mejor</p>
 
-        <div class="main__productos">
+        <div id="lista-productos" class="main__productos">
             <div class="main__producto">
                 <img src="./img/producto1.jpg" class="main__prodimagen">
                 <div class="main__prodcontenido">
@@ -72,7 +73,7 @@
                         <img src="./img/estrellas.png">
                     </div>
                     <p class="main__prodprecio">Precio: <span>$15</span></p>
-                    <a href="#" data-id="2" class="main__prodbtn boton">Agregar Al Carrito</a>
+                    <a href="#" data-id="1" class="main__prodbtn boton">Agregar Al Carrito</a>
                 </div>
             </div>
             <div class="main__producto">
@@ -94,7 +95,7 @@
                         <img src="./img/estrellas.png">
                     </div>
                     <p class="main__prodprecio">Precio: <span>$15</span></p>
-                    <a href="#" data-id="2" class="main__prodbtn boton">Agregar Al Carrito</a>
+                    <a href="#" data-id="3" class="main__prodbtn boton">Agregar Al Carrito</a>
                 </div>
             </div>
             <div class="main__producto">
@@ -105,7 +106,7 @@
                         <img src="./img/estrellas.png">
                     </div>
                     <p class="main__prodprecio">Precio: <span>$15</span></p>
-                    <a href="#" data-id="2" class="main__prodbtn boton">Agregar Al Carrito</a>
+                    <a href="#" data-id="4" class="main__prodbtn boton">Agregar Al Carrito</a>
                 </div>
             </div>
             <div class="main__producto">
@@ -201,7 +202,8 @@
 
     <section class="section contenedor">
         <h2 class="section__titulo">Tips maquillaje principiantes y mejores productos:</h2>
-        <p class="section__parrafo">Encontrarás tips de maquillaje para principiantes de esta manera te sacarás el mayor partido paso a paso con nuestros tutoriales.</p>
+        <p class="section__parrafo">Encontrarás tips de maquillaje para principiantes de esta manera te sacarás el mayor
+            partido paso a paso con nuestros tutoriales.</p>
 
         <div class="section__tips">
             <div class="section__tip">
@@ -245,7 +247,8 @@
 
     <section class="section contenedor">
         <h2 class="section__titulo">Los últimos trucos de belleza caseros para el cabello</h2>
-        <p class="section__parrafo">Nuestro cabello es una de las partes del cuerpo que más nos gusta cuidar. Por ello aquí encontrarás los mejores trucos de belleza para tu cabello.</p>
+        <p class="section__parrafo">Nuestro cabello es una de las partes del cuerpo que más nos gusta cuidar. Por ello
+            aquí encontrarás los mejores trucos de belleza para tu cabello.</p>
 
         <div class="section__tips">
             <div class="section__tip">
@@ -290,7 +293,8 @@
     <footer class="footer">
         <div class="footer__contenedor">
             <p class="footer__aviso">¡No te pierdas nada!</p>
-            <p class="footer__parrafo">Regístrate en la newsletter y recibe todos los análisis que publique en tu correo.</p>
+            <p class="footer__parrafo">Regístrate en la newsletter y recibe todos los análisis que publique en tu
+                correo.</p>
             <form action="#" class="footer__formulario row">
                 <input type="text" placeholder="Nombre">
                 <input type="text" placeholder="Email">
@@ -304,6 +308,9 @@
             <p class="footer__copyright">Copyright © 2021. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/carrito.js"></script>
 </body>
 
 </html>
