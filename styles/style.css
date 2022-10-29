@@ -22,12 +22,16 @@ body {
 
 /*GENERAL*/
 .contenedor {
-    max-width: 90%;
+    max-width: 65%;
     margin: 0 auto;
 }
 
-a{
+a {
     text-decoration: none;
+}
+
+img {
+    width: 100%;
 }
 
 /*UTILIDADES*/
@@ -37,14 +41,40 @@ a{
     align-items: center;
 }
 
-.column{
+.column {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
+.boton{
+    display: block;
+    padding: 1.5rem 0;
+    color: #000;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: var(--colorPrimario);
+    border-radius: .4rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.boton:hover{
+    color: #fff;
+    background-color: var(--colorSecundario);
+}
+
 /*HEADER*/
 .header {
     padding: 1rem 0;
+}
+
+.header {
+    max-width: 95%;
+    margin: 0 auto;
 }
 
 .header__logo {
@@ -57,7 +87,7 @@ a{
     font-weight: 900;
 }
 
-.header__enlace{
+.header__enlace {
     color: #000;
 }
 
@@ -124,27 +154,185 @@ a{
     color: #fff;
 }
 
-.hero__titulo{
+.hero__titulo {
     font-size: 3rem;
     text-align: center;
-    width: 70%;
-    margin: 0 auto;
     font-weight: bold;
+    margin: 0;
 }
 
-.hero__contenido{
-    margin: 10rem auto 0 auto;
+.hero__contenido {
+    margin: 9rem auto 0 auto;
     text-align: center;
     font-size: 1.8rem;
-    width: 60%;
+    width: 90%;
 }
 
-.hero__contenido a{
+.hero__contenido a {
     color: var(--colorSecundario);
 }
 
 /*CONTENIDO PRINCIPAL*/
+.main {
+    padding: 5rem 0;
+}
 
+.main__titulo {
+    text-align: center;
+    color: #3A3A3A;
+}
+
+.main__parrafo {
+    text-align: center;
+    line-height: 3.5rem;
+    font-size: 1.5rem;
+    color: #7A7A7A;
+}
+
+.main__productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+    row-gap: 5rem;
+    margin-top: 4rem;
+}
+
+.main__producto {
+    -webkit-box-shadow: 7px 10px 24px -8px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 7px 10px 24px -8px rgba(0, 0, 0, 0.6);
+    box-shadow: 7px 10px 24px -8px rgba(0, 0, 0, 0.6);
+    border-radius: 1rem;  
+    text-align: center; 
+}
+
+.main__prodimagen{
+    height: 20rem;
+}
+
+.main__prodtitulo{
+    color: #3A3A3A;
+}
+
+.main__prodcontenido{
+    padding: 1rem;
+}
+
+.main__prodestrellas{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.main__prodprecio{
+    color: #7A7A7A;
+}
+
+.main__prodprecio span{
+    color: #3A3A3A;
+}
+
+/*SECTION*/
+.section{
+    padding-bottom: 5rem;
+}
+
+.section__titulo {
+    text-align: center;
+    color: #3A3A3A;
+}
+
+.section__parrafo {
+    text-align: center;
+    line-height: 3.5rem;
+    font-size: 1.5rem;
+    color: #7A7A7A;
+}
+
+.section__tips {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+    row-gap: 5rem;
+    margin-top: 4rem;
+}
+
+.section__tip {
+    -webkit-box-shadow: 7px 10px 24px -8px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 7px 10px 24px -8px rgba(0, 0, 0, 0.6);
+    box-shadow: 7px 10px 24px -8px rgba(0, 0, 0, 0.6);
+    border-radius: 1rem;  
+    text-align: center; 
+}
+
+.section__tipimagen{
+    height: 20rem;
+}
+
+.section__tipcontenido{
+    padding: 2rem;
+    color: #7A7A7A;
+}
+
+/*FOOTER*/
+.footer{
+    background-color: #EDEDED;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.footer__contenedor{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.footer__aviso{
+    font-weight: 900;
+    color: #3A3A3A;
+    font-size: 3rem;
+}
+
+.footer__parrafo{
+    color: #7A7A7A;
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+.footer__formulario{
+    margin-bottom: 3rem;
+    gap: 2rem;
+}
+
+.footer__formulario input[type="text"]{
+    padding: 1rem 1rem;
+    border: 0;
+    width: 22rem;
+    font-size: 1.4rem;
+    border-radius: .2rem;
+}
+
+.footer__formulario input[type="submit"]{
+    border: 0;
+    background-color: #EE9BBE;
+    padding: 1rem 3rem;
+    margin: 0;
+}
+
+.footer__redes{
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer__redes img{
+    width: 5rem;
+    cursor: pointer;
+}
+
+.footer__copyright{
+    text-align: center;
+    color: #7A7A7A;
+    font-size: 1.5rem;
+    margin-top: 5rem;
+}
 
 /*------*/
 
