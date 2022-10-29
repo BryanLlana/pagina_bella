@@ -1,0 +1,170 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+:root {
+    --colorPrimario: #FEAC99;
+    --colorSecundario: #FD5933;
+    --pink: #F4BFEB;
+}
+
+body {
+    font-size: 1.8rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+/*GENERAL*/
+.contenedor {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*UTILIDADES*/
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/*HEADER*/
+.header {
+    padding: 1rem 0;
+}
+
+.header__logo {
+    color: var(--colorPrimario);
+    font-weight: 900;
+}
+
+.header__logo span {
+    color: var(--colorSecundario);
+    font-weight: 900;
+}
+
+.header__enlace{
+    color: #000;
+}
+
+.header__enlace--activo {
+    color: var(--colorPrimario);
+}
+
+.header__enlace:hover {
+    color: var(--colorSecundario);
+}
+
+.header__espaciado {
+    gap: 2rem;
+}
+
+.header__submenu {
+    position: relative;
+}
+
+.header__carrito {
+    display: none;
+}
+
+.header__submenu:hover .header__carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+
+    top: 100%;
+    z-index: 1;
+    background-color: white;
+    padding: 2rem;
+    margin-top: 2rem;
+    min-height: 40rem;
+    min-width: 30rem;
+}
+
+.header__button {
+    display: block;
+    height: 38px;
+    padding: 0 30px;
+    color: #555;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-top: 1rem;
+}
+
+/*HERO*/
+.hero {
+    background-color: var(--pink);
+    height: 27rem;
+    padding: 2rem 0;
+    color: #fff;
+}
+
+.hero__titulo{
+    font-size: 3rem;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.hero__contenido{
+    margin: 10rem auto 0 auto;
+    text-align: center;
+    font-size: 1.8rem;
+    width: 60%;
+}
+
+.hero__contenido a{
+    color: var(--colorSecundario);
+}
+
+/*CONTENIDO PRINCIPAL*/
+
+
+/*------*/
+
+.borrar-curso {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+
+.vacio {
+    padding: 10px;
+    background-color: crimson;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
