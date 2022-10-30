@@ -1,0 +1,64 @@
+[
+    {
+        "id": 1,
+        "titulo": "Producto 1",
+        "precio": 120,
+        "img": "producto1.jpg"
+    },
+    {
+        "id": 2,
+        "titulo":"Producto 2",
+        "precio": 50,
+        "img": "producto2.png"
+    },{
+        "id": 3,
+        "titulo": "Producto 3",
+        "precio": 60,
+        "img": "producto3.jpeg"
+    },{
+        "id": 4,
+        "titulo": "Producto 4",
+        "precio": 70,
+        "img": "producto4.jpeg"
+    },{
+        "id": 5,
+        "titulo": "Producto 5",
+        "precio": 150,
+        "img": "producto5.jpeg"
+    },{
+        "id": 6,
+        "titulo":"Producto 6",
+        "precio": 48,
+        "img": "producto6.jpeg"
+    },{
+        "id": 7,
+        "titulo": "Producto 7",
+        "precio": 90,
+        "img": "producto7.jpeg"
+    },{
+        "id": 8,
+        "titulo": "Producto 8",
+        "precio": 90,
+        "img": "producto8.jpeg"
+    },{
+        "id": 9,
+        "titulo": "Producto 9",
+        "precio": 90,
+        "img": "producto9.jpeg"
+    },{
+        "id": 10,
+        "titulo": "Producto 10",
+        "precio": 90,
+        "img": "producto10.jpeg"
+    },{
+        "id": 11,
+        "titulo": "Producto 11",
+        "precio": 90,
+        "img": "producto11.jpeg"
+    },{
+        "id": 12,
+        "titulo": "Producto 12",
+        "precio": 90,
+        "img": "producto12.webp"
+    }
+]

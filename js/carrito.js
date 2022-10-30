@@ -8,6 +8,8 @@ let productosCarrito = JSON.parse(localStorage.getItem('productos')) || [];
 
 const cargarEventos = () => {
 
+    llenarProductoHTML();
+
     if(productosCarrito.length > 0){
         llenarCarritoHTML();
     }
@@ -26,6 +28,34 @@ const cargarEventos = () => {
             'success'
         )
     })
+}
+
+const llenarProductoHTML = async() =>{
+    try {
+        const resultado = await fetch('./productos.json');
+        const data = await resultado.json();
+        
+        data.forEach(producto => {
+            const {titulo, precio, img, id} = producto;
+            const divProducto = document.createElement('div');
+            divProducto.classList.add('main__producto');
+            divProducto.innerHTML = `
+                <img src="./img/${img}" class="main__prodimagen">
+                <div class="main__prodcontenido">
+                    <h4>${titulo}</h4>
+                    <div class="main__prodestrellas">
+                        <img src="./img/estrellas.png">
+                    </div>
+                    <p class="main__prodprecio">Precio: <span>${'$'+precio}</span></p>
+                    <a href="#" data-id=${id} class="main__prodbtn boton">Agregar Al Carrito</a>
+                </div>
+            `;
+
+            listaProductos.appendChild(divProducto);
+        })
+    } catch (error) {
+        console.log(error);
+    }
 }
 
 const eliminarCurso = e =>{
