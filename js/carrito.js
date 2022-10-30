@@ -1,3 +1,5 @@
+(function(){
+
 const carrito = document.querySelector('#carrito');
 const listaCarrito = document.querySelector('#lista-carrito tbody');
 const btnVaciarCarrito = document.querySelector('#vaciar-carrito');
@@ -27,6 +29,8 @@ const cargarEventos = () => {
 }
 
 const eliminarCurso = e =>{
+    e.preventDefault();
+
     if(e.target.classList.contains('borrar-producto')){
         const idProducto = e.target.getAttribute('data-id');
         productosCarrito = productosCarrito.filter(producto=>producto.id !== idProducto);
@@ -117,3 +121,5 @@ const limpiarHTML = () => {
 }
 
 cargarEventos();
+
+})();
