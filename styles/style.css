@@ -317,7 +317,8 @@ img {
     gap: 2rem;
 }
 
-.footer__formulario input[type="text"] {
+.footer__formulario input[type="text"],
+.footer__formulario input[type="email"] {
     padding: 1rem 1rem;
     border: 0;
     width: 22rem;
