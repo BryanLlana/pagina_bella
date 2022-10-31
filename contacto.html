@@ -54,29 +54,29 @@
     <section class="form-fondo">
         <div class="contenedor">
             <p>Si quieres ponerte en contacto conmigo para dudas, colaboraciones, sorteos… puedes llenar tus datos: </p>
-            <form class="formulario">
+            <form class="formulario" id="formulario-contacto">
                 <fieldset>
                     <legend>Contactános llenando todos los campos</legend>
     
                     <div class="formulario__campos">
                         <div class="formulario__campo">
                             <label>Nombre</label>
-                            <input class="input-text" type="text" placeholder="Tu nombre">
+                            <input class="input-text" type="text" placeholder="Tu nombre" id="nombre_contacto">
                         </div>
     
                         <div class="formulario__campo">
                             <label>Telefono</label>
-                            <input class="input-text" type="tel" placeholder="Tu telefono">
+                            <input class="input-text" type="tel" placeholder="Tu telefono" id="tel_contacto">
                         </div>
     
                         <div class="formulario__campo">
                             <label>Correo</label>
-                            <input class="input-text" type="email" placeholder="Tu correo">
+                            <input class="input-text" type="email" placeholder="Tu correo" id="email_contacto">
                         </div>
     
                         <div class="formulario__campo">
                             <label>Mensaje</label>
-                            <textarea class="input-text"></textarea>
+                            <textarea class="input-text" id="mensaje_contacto"></textarea>
                         </div>
                     </div>
     
@@ -87,6 +87,15 @@
             </form>
         </div>
     </section>
+
+    <main class="main contenedor notvisible">
+        <h2 class="main__titulo">Productos de Belleza más Recientes</h2>
+        <p class="main__parrafo">Los productos de Belleza para mujeres más recientes. Sigue los pasos de aquellos que
+            más te gusten y en muy
+            poco tiempo te verás y sentirás mucho mejor</p>
+
+        <div id="lista-productos" class="main__productos"></div>
+    </main>
 
     <footer class="footer">
         <div class="footer__contenedor" id="contenedor-footer">
@@ -107,7 +116,10 @@
         </div>
     </footer>
 
-    <script src="./js/header.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/carrito.js"></script>
+    <script src="./js/validarRegistro.js"></script>
+    <script src="./js/contacto.js"></script>
 </body>
 
 </html>
