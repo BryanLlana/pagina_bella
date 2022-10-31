@@ -438,3 +438,21 @@ img {
 .notvisible{
     display: none;
 }
+
+/*GALERIA*/
+.galeria{
+    background-color: #F4BFEB;
+    padding: 4rem 0;
+}
+
+.galeria_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    background-color: #FEAC99;
+    padding: 2rem;
+}
+
+.galeria_grid img{
+    height: 30rem;
+}
