@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belleza</title>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <header id="header" class="header">
+        <div class="header__contenedor">
+            <div class="row">
+                <div class="row">
+                    <img src="./img/pattern-architecture-8-svgrepo-com.svg" id="logo">
+                    <p class="header__logo">SALON<span>BELLA</span></p>
+                </div>
+                <nav class="row header__espaciado">
+                    <a href="./index.html" class="header__enlace">Inicio</a>
+                    <a href="./blog.html" class="header__enlace">Blog</a>
+                    <a href="./contacto.html" class="header__enlace header__enlace--activo">Contacto</a>
+                    <a href="./galeria.html" class="header__enlace">Galería</a>
+                    <a href="./criptomonedas.html" class="header__enlace">CriptoMonedas</a>
+                </nav>
+                <div class="header__submenu">
+                    <img src="./img/cart-trolley-buy-2-svgrepo-com.svg" id="img-carrito">
+                    <div id="carrito" class="header__carrito">
+                        <table id="lista-carrito">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+
+                        <a href="#" id="vaciar-carrito" class="header__button">Vaciar Carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="form-fondo">
+        <div class="contenedor">
+            <p>Si quieres ponerte en contacto conmigo para dudas, colaboraciones, sorteos… puedes llenar tus datos: </p>
+            <form class="formulario">
+                <fieldset>
+                    <legend>Contactános llenando todos los campos</legend>
+    
+                    <div class="formulario__campos">
+                        <div class="formulario__campo">
+                            <label>Nombre</label>
+                            <input class="input-text" type="text" placeholder="Tu nombre">
+                        </div>
+    
+                        <div class="formulario__campo">
+                            <label>Telefono</label>
+                            <input class="input-text" type="tel" placeholder="Tu telefono">
+                        </div>
+    
+                        <div class="formulario__campo">
+                            <label>Correo</label>
+                            <input class="input-text" type="email" placeholder="Tu correo">
+                        </div>
+    
+                        <div class="formulario__campo">
+                            <label>Mensaje</label>
+                            <textarea class="input-text"></textarea>
+                        </div>
+                    </div>
+    
+                    <div class="formulario__enviar">
+                        <input class="boton" type="submit" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__contenedor" id="contenedor-footer">
+            <p class="footer__aviso">¡No te pierdas nada!</p>
+            <p class="footer__parrafo">Regístrate en la newsletter y recibe todos los análisis que publique en tu
+                correo.</p>
+            <form action="#" class="footer__formulario row" id="formulario-registro">
+                <input type="text" placeholder="Nombre" id="nombre">
+                <input type="email" placeholder="Email" id="email">
+                <input type="submit" value="Suscribirse" class="boton">
+            </form>
+            <div class="footer__redes row">
+                <img src="./img/communication-facebook-interaction-svgrepo-com.svg" alt="facebook">
+                <img src="./img/instagram-internet-media-svgrepo-com.svg" alt="instagram">
+                <img src="./img/media-multimedia-social-svgrepo-com.svg" alt="youtube">
+            </div>
+            <p class="footer__copyright">Copyright © 2021. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="./js/header.js"></script>
+</body>
+
+</html>
